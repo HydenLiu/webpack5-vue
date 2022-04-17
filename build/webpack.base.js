@@ -59,7 +59,17 @@ module.exports = {
         use: [
           // loader执行顺序是从右到左
           MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions:
+                {
+                  plugins: ['autoprefixer'],
+                },
+            },
+          },
           'sass-loader',
           // {
           //   loader: 'sass-resources-loader',

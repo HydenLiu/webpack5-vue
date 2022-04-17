@@ -8,13 +8,14 @@
     "build": "webpack --config ./build/webpack.prod",
     "eslint": "eslint ./src"
   },
-  "author": "",
+  "author": "sunupdong",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@vue/babel-preset-jsx": "^1.2.4",
+    "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.4",
     "cache-loader": "^4.1.0",
     "compression-webpack-plugin": "^9.2.0",
@@ -26,10 +27,12 @@
     "eslint-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^6.2.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "sass": "^1.50.0",
     "sass-loader": "^12.6.0",
     "sass-resources-loader": "^2.2.5",
+    "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.1",
     "thread-loader": "^3.0.4",
     "vue": "^2.6.14",
@@ -41,5 +44,18 @@
     "webpack-dev-server": "^4.8.1",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+
 }
