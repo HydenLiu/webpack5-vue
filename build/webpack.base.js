@@ -93,8 +93,8 @@ module.exports = {
         // 排除node_modules中的js
         exclude: /node_modules/,
         use: [
-          'cache-loader',
-          'thread-loader',
+          'cache-loader', // 缓存资源，提高二次构建的速度
+          'thread-loader', // 多进程打包，可以大大提高构建的速度
           'babel-loader',
         ],
       },
