@@ -22,3 +22,6 @@
 
 1. eslint
 2. premitter
+
+### 分支：webpack-tailwind-css
+* 使用了tailwind-css
