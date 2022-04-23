@@ -2,7 +2,7 @@
 ### 基本配置
 
 1. 入口文件配置
-2. html、图片、css配置
+2. html、图片、scss配置
 3. babel的配置
 4. vue文件的配置
 5. 路径别名的配置
@@ -22,3 +22,6 @@
 
 1. eslint
 2. premitter
+
+### 分支：webpack-tailwind-css
+* 使用了tailwind-css
