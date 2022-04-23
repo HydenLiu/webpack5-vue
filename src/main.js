@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './app.vue'
 import { add } from './tools/add'
-import './styles/index.scss'
+import './styles/index.css'
 
 console.log(add(1, 2))
 console.log('我是main.js')

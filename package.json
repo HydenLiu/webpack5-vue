@@ -27,12 +27,14 @@
     "eslint-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "sass": "^1.50.0",
     "sass-loader": "^12.6.0",
     "sass-resources-loader": "^2.2.5",
     "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
     "terser-webpack-plugin": "^5.3.1",
     "thread-loader": "^3.0.4",
     "vue": "^2.6.14",
@@ -44,7 +46,9 @@
     "webpack-dev-server": "^4.8.1",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cssnano": "^5.1.7"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -57,5 +61,4 @@
       "last 1 safari version"
     ]
   }
-
 }

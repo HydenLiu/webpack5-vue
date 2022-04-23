@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const CompressionPlugin = require('compression-webpack-plugin')
 const base = require('./webpack.base')
 
@@ -22,7 +22,7 @@ module.exports = merge(base, {
       },
     }),
     // 审查打包后的体积分布，进而进行相应的体积优化
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
     // gzip
     new CompressionPlugin({
       algorithm: 'gzip',

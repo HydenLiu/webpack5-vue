@@ -55,30 +55,13 @@ module.exports = {
     rules: [
       {
         // 匹配文件后缀的规则
-        test: /\.(css|s[cs]ss)$/,
+        test: /\.css$/,
         use: [
           // loader执行顺序是从右到左
           MiniCssExtractPlugin.loader,
-          'style-loader',
+          // 'style-loader',
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions:
-                {
-                  plugins: ['autoprefixer'],
-                },
-            },
-          },
-          'sass-loader',
-          // {
-          //   loader: 'sass-resources-loader',
-          //   options: {
-          //     resources: [
-          //       // 放置全局引入的公共scss文件
-          //     ],
-          //   },
-          // },
+          'postcss-loader',
         ],
       },
       {
