@@ -8,7 +8,7 @@
     "build": "webpack --config ./build/webpack.prod",
     "eslint": "eslint ./src"
   },
-  "author": "sunupdong",
+  "author": "Hyden Liu",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.9",
